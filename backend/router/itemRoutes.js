@@ -3,8 +3,6 @@ const router = express.Router();
 const items = require('../data/mockData');
 
 router.get('/',(req,res) => {
-    console.log('hare');
-    
     const page = parseInt(req.query.page) || 1;
     const limit = parseInt(req.query.limit) || 10;
 
