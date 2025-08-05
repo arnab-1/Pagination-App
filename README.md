@@ -101,8 +101,11 @@ Page navigation state is synced with the API.
 
 Scalable architecture designed for large datasets.
 
-🧪 Sample API Response
-A GET request to /api/items?page=1&limit=10 might return:
+🧪 Sample API
+```
+    GET /api/items?page=1&limit=10
+```
+return:
 ```
 {
   "data": [
