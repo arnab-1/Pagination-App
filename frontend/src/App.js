@@ -13,7 +13,7 @@ function App() {
 
   const fetchItems = async () => {
     try {
-      const res = await axios.get(`/api/items?page=${page}&limit=${limit}`);
+      const res = await axios.get(`http://localhost:5000/api/items?page=${page}&limit=${limit}`);
       setItems(res.data.items);          // Adjust key if backend sends differently
       console.log('Data from backend for test is ',res.data);
       

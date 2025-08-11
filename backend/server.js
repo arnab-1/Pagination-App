@@ -6,7 +6,7 @@ const connectDB = require('./db/connect')
 const app = express();
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({ origin: 'http://localhost:3000'}));
 connectDB();
 app.use('/api/items',itemRoutes);
 const PORT = 5000;
